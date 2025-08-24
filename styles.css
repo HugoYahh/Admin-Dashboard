@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .dashboard{
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns:  5fr;
   grid-template-rows: 1fr 5fr;
 }
 
-.pages-img, .setting-img,.header-img{
+.pages-img, .setting-img,.header-img, .card-logo{
   width: 30px;
 }
 
@@ -204,4 +204,59 @@ input[type="search"]::-webkit-search-cancel-button {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+}
+
+.welcome{
+  display:flex;
+  justify-content: space-between;
+  padding: 15px 60px;
+}
+
+.welcome-left{
+  display: flex;
+  flex-direction: row;
+  gap: 15px ;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-right{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.welcome-img{
+  width: 80px;
+}
+
+.welcome-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-btn{
+  background-color: var(--sidebar-color);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 7.5px 25px;
+}
+
+.cards{
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+
+.annoucements{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.trending{
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
